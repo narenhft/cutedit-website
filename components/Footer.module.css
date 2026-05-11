@@ -1,0 +1,62 @@
+.footer {
+  border-top: 1px solid rgba(138, 92, 246, 0.2);
+  padding: 56px 48px 32px;
+  margin-top: 80px;
+}
+
+.inner {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #8b8aaa;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.brand p {
+  font-size: 15px;
+  color: #8b8aaa;
+  line-height: 1.7;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  align-items: center;
+}
+
+.links a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #c0bedd;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #a78bfa;
+}
+
+.bottom {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: #4a4870;
+  border-top: 1px solid rgba(138, 92, 246, 0.08);
+  padding-top: 24px;
+}
