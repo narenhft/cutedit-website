@@ -37,7 +37,7 @@
 }
 
 .heroTitle {
-  font-size: clamp(48px, 7vw, 88px);
+  font-size: clamp(36px, 6vw, 88px);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.05;
@@ -52,7 +52,7 @@
 }
 
 .heroSub {
-  font-size: 18px;
+  font-size: clamp(15px, 2vw, 18px);
   color: #8b8aaa;
   max-width: 520px;
   margin: 0 auto 40px;
@@ -89,7 +89,6 @@
 /* Features */
 .features {
   padding: 80px 0 100px;
-  text-align: center;
 }
 
 .featLabel {
@@ -121,14 +120,14 @@
 }
 
 .featIcon {
-  font-size: 40px;
+  font-size: 28px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .featCard h3 {
   font-family: 'Syne', sans-serif;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 700;
   margin-bottom: 10px;
   color: #f0eeff;
@@ -149,12 +148,12 @@
   background: linear-gradient(135deg, rgba(138, 92, 246, 0.15) 0%, rgba(224, 64, 251, 0.1) 100%);
   border: 1px solid rgba(138, 92, 246, 0.25);
   border-radius: 24px;
-  padding: 64px 48px;
+  padding: 48px 24px;
   text-align: center;
 }
 
 .bannerInner h2 {
-  font-size: 40px;
+  font-size: clamp(24px, 5vw, 40px);
   font-weight: 800;
   margin-bottom: 12px;
 }
@@ -165,8 +164,21 @@
   margin-bottom: 32px;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+  .featGrid {
+    grid-template-columns: 1fr;
+  }
+  .bannerInner {
+    padding: 40px 20px;
+  }
+}
+
 .featHeading {
-  font-size: 42px;
+  font-size: clamp(28px, 5vw, 42px);
   font-weight: 800;
   text-align: center;
   margin-bottom: 48px;

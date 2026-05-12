@@ -31,12 +31,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
   margin-bottom: 72px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .card {
@@ -45,10 +42,6 @@
   border-radius: 20px;
   padding: 32px;
   transition: all 0.25s ease;
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .card:hover {
@@ -62,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .icon {
@@ -85,11 +78,8 @@
   font-family: 'Syne', sans-serif;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: #f0eeff;
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
 .cardDesc {
@@ -113,4 +103,17 @@
 .playBanner p {
   color: #8b8aaa;
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .page {
+    padding: 100px 0 60px;
+  }
+  .playBanner {
+    padding: 36px 20px;
+  }
 }
