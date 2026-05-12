@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
- 		 <span className={styles.logo}>✂ CutEdit — AI-powered video editing, right in your pocket.</span>
+ 		 <span className={styles.logo}>CutEdit — AI-powered video editing, right in your pocket.</span>
 	</div>
         <div className={styles.links}>
           <Link href="/">Home</Link>

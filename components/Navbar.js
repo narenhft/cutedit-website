@@ -11,8 +11,8 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoMark}>✂</span>
-          CutEdit
+          <img src="/icon.png" alt="CutEdit" width={32} height={32} style={{borderRadius:'8px'}} />
+	  CutEdit
         </Link>
 
         <ul className={`${styles.links} ${open ? styles.open : ''}`}>
