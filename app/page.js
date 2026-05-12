@@ -1,13 +1,9 @@
 import Link from 'next/link'
 import styles from './page.module.css'
-import CinemaHero from '../components/CinemaHero'
 
 export default function Home() {
   return (
     <>
-      {/* Cinema Animation */}
-      <CinemaHero />
-
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.glow} />
@@ -52,14 +48,14 @@ export default function Home() {
       {/* Features strip */}
       <section className={styles.features}>
         <div className="container">
-          <p className={`${styles.featLabel} section-label`}>Why CutEdit</p>
+          <h2 className={styles.featHeading}>Why CutEdit</h2>
           <div className={styles.featGrid}>
             {[
-              { icon: '⚡', title: 'One-tap edits', desc: 'AI auto-edits your clip in seconds — no timeline scrubbing needed.' },
+              { icon: '⚡', title: 'Timeline Editor', desc: 'Full-featured timeline editor with multi-track support for precise control over your edits.' },
               { icon: '🎬', title: 'Cinematic filters', desc: 'Hollywood-grade color grading, right on your phone.' },
               { icon: '✂️', title: 'Smart trimming', desc: 'AI detects highlights and silences for clean cuts every time.' },
               { icon: '🎵', title: 'Auto captions', desc: 'Generate subtitles and captions automatically from your audio.' },
-              { icon: '🌟', title: 'Effects library', desc: 'Hundreds of transitions, overlays, and motion graphics.' },
+              { icon: '🌟', title: 'Speed Ramp', desc: 'Smooth speed ramping effects — slow motion, fast cuts, and everything in between.' },
               { icon: '📤', title: 'Export anywhere', desc: 'Export in any resolution for Instagram, YouTube, or TikTok.' },
             ].map((f) => (
               <div key={f.title} className={styles.featCard}>
