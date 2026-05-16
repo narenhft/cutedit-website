@@ -37,10 +37,10 @@ const features = [
     icon: '📤',
   },
   {
-    tag: 'Tools',
-    title: 'Background Remover',
-    desc: 'Cut out subjects from any video clip with AI-powered background removal. No green screen needed.',
-    icon: '🪄',
+    tag: 'Visual',
+    title: 'Cinematic Filters',
+    desc: 'One-tap LUT filters inspired by Hollywood films. Transform your footage with stunning cinematic color grades.',
+    icon: '🎨',
   },
 ]
 
