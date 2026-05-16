@@ -27,9 +27,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3.18 23.76a2 2 0 0 0 2.18-.22L18 13.54 14.46 10 3.18 23.76zM22.47 9.88a2 2 0 0 0 0-3.76L18.92 4.2 15.08 8l3.84 3.8 3.55-1.92zM2.1.32A2 2 0 0 0 1 2v20a2 2 0 0 0 1.1 1.76L14.3 12 2.1.32zM18 10.46 5.36.46A2 2 0 0 0 3.18.24L14.46 14 18 10.46z"/>
-                </svg>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height={20} style={{filter:'brightness(10)'}} />
                 Download on Play Store
               </a>
               <Link href="/products" className="btn-ghost">
