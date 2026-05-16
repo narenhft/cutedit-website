@@ -37,10 +37,10 @@ const features = [
     icon: '📤',
   },
   {
-    tag: 'Visual',
-    title: 'Cinematic Filters',
-    desc: 'One-tap LUT filters inspired by Hollywood films. Transform your footage with stunning cinematic color grades.',
-    icon: '🎨',
+    tag: 'Core',
+    title: 'Smart Trimming',
+    desc: 'Trim, cut and split your clips with precision. Remove unwanted parts instantly with AI-powered silence detection.',
+    icon: '✂️',
   },
 ]
 
