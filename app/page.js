@@ -27,8 +27,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height={20} style={{filter:'brightness(10)'}} />
-                Download on Play Store
+                <img src="/google-play-badge.png" alt="Get it on Google Play" height={40} />
               </a>
               <Link href="/products" className="btn-ghost">
                 See Features →
