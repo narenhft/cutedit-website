@@ -8,23 +8,11 @@ export const metadata = {
 
 const posts = [
   {
-    date: 'May 2025',
-    tag: 'Tutorial',
-    title: '5 AI editing tricks that save hours of work',
-    excerpt: 'Discover how CutEdit\'s AI features can automate the most time-consuming parts of video editing.',
-  },
-  {
-    date: 'Apr 2025',
-    tag: 'Update',
-    title: 'Introducing Auto Captions — now in CutEdit',
-    excerpt: 'We launched one of our most-requested features: AI-generated subtitles in multiple languages.',
-  },
-  {
-    date: 'Mar 2025',
-    tag: 'Guide',
-    title: 'How to make Reels that get views in 2025',
-    excerpt: 'A deep dive into aspect ratios, hooks, pacing, and the formats that Instagram\'s algorithm loves.',
-  },
+  date: 'May 2026',
+  tag: 'Guide',
+  title: 'Stop Downloading 5 Different Apps — CutEdit Does It All',
+  excerpt: 'One app for trimming, GIF making, audio extraction, AI captions, speed ramp, compressor and more. No need to download multiple apps.',
+},
 ]
 
 export default function Blog() {

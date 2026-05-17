@@ -3,7 +3,7 @@
 // ─────────────────────────────────────────
 
 const flags = {
-  BLOG_ENABLED: false, // set to true to show Blog in nav & enable blog page
+  BLOG_ENABLED: true, // set to true to show Blog in nav & enable blog page
 }
 
 export default flags
