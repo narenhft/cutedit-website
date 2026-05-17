@@ -2,17 +2,29 @@ import flags from '../../flags'
 import styles from './page.module.css'
 
 export const metadata = {
-  title: 'Blog — CutEdit | Video Editing Tips & Tutorials',
-  description: 'Video editing tips, reels tutorials, and AI caption guides for Indian creators using CutEdit.',
+  title: 'Blog — CutEdit',
+  description: 'Tips, tutorials and updates from the CutEdit team.',
 }
 
 const posts = [
   {
-  date: 'May 2026',
-  tag: 'Guide',
-  title: 'Stop Downloading 5 Different Apps — CutEdit Does It All',
-  excerpt: 'One app for trimming, GIF making, audio extraction, AI captions, speed ramp, compressor and more. No need to download multiple apps.',
-},
+    date: 'May 2025',
+    tag: 'Tutorial',
+    title: '5 AI editing tricks that save hours of work',
+    excerpt: 'Discover how CutEdit\'s AI features can automate the most time-consuming parts of video editing.',
+  },
+  {
+    date: 'Apr 2025',
+    tag: 'Update',
+    title: 'Introducing Auto Captions — now in CutEdit',
+    excerpt: 'We launched one of our most-requested features: AI-generated subtitles in multiple languages.',
+  },
+  {
+    date: 'Mar 2025',
+    tag: 'Guide',
+    title: 'How to make Reels that get views in 2025',
+    excerpt: 'A deep dive into aspect ratios, hooks, pacing, and the formats that Instagram\'s algorithm loves.',
+  },
 ]
 
 export default function Blog() {
@@ -40,15 +52,17 @@ export default function Blog() {
         </div>
         <div className={styles.posts}>
           {posts.map((p) => (
-            <article key={p.title} className={styles.post}>
-              <div className={styles.postMeta}>
-                <span className={styles.tag}>{p.tag}</span>
-                <span className={styles.date}>{p.date}</span>
-              </div>
-              <h2 className={styles.postTitle}>{p.title}</h2>
-              <p className={styles.postExcerpt}>{p.excerpt}</p>
-              <span className={styles.readMore}>Read more →</span>
-            </article>
+            <Link href={`/blog/${p.slug}`} key={p.title} style={{textDecoration:'none'}}>
+              <article className={styles.post}>
+                <div className={styles.postMeta}>
+                  <span className={styles.tag}>{p.tag}</span>
+                  <span className={styles.date}>{p.date}</span>
+                </div>
+                <h2 className={styles.postTitle}>{p.title}</h2>
+                <p className={styles.postExcerpt}>{p.excerpt}</p>
+                <span className={styles.readMore}>Read more →</span>
+              </article>
+            </Link>
           ))}
         </div>
       </div>
