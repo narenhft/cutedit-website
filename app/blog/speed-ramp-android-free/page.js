@@ -31,7 +31,7 @@ const post = {
     },
     { type: 'h2', text: 'What Speed Effects Does CutEdit Support?' },
     { type: 'h3', text: 'Slow Motion' },
-    { type: 'p', text: 'Slow down any part of your video to 0.25x, 0.5x, or any custom speed. Perfect for capturing dramatic moments, dance moves, sports highlights, or product reveals. CutEdit\'s slow motion is smooth and frame-accurate — no choppy or stuttering playback.' },
+    { type: 'p', text: 'Slow down any part of your video to 0.25x, 0.5x, or any custom speed. Perfect for capturing dramatic moments, dance moves, sports highlights, or product reveals. CutEdit slow motion is smooth and frame-accurate — no choppy or stuttering playback.' },
     { type: 'h3', text: 'Fast Forward' },
     { type: 'p', text: 'Speed up any clip to 2x, 3x, 4x, or more. Great for time-lapse style videos, cooking videos, travel vlogs, or making long clips shorter without losing the story.' },
     { type: 'h3', text: 'Cinematic Speed Ramp' },
@@ -64,20 +64,6 @@ const post = {
     { type: 'p', text: 'Slow down the reveal moment. Fast forward the setup. Speed ramp adds premium production value to product videos — making even simple phone-shot content look professional.' },
     { type: 'h3', text: 'Wedding and Event Videos' },
     { type: 'p', text: 'Capture the emotional peak moments — the ring exchange, the first look, the celebration — in slow motion. Speed ramp these moments for a cinematic wedding highlight reel.' },
-    { type: 'h2', text: 'CutEdit Speed Ramp vs Other Apps' },
-    {
-      type: 'table',
-      headers: ['Feature', 'CutEdit', 'CapCut', 'VN Editor', 'KineMaster'],
-      rows: [
-        ['Speed Ramp', '✅ Free', '✅ Free', '✅ Free', '💰 Paid'],
-        ['Works Offline', '✅ Yes', '❌ No', '✅ Yes', '✅ Yes'],
-        ['No Watermark', '✅ Never', '⚠️ Sometimes', '✅ Yes', '❌ Paid only'],
-        ['2GB RAM Support', '✅ Yes', '⚠️ Limited', '✅ Yes', '❌ No'],
-        ['No Login Required', '✅ Yes', '❌ Required', '✅ Yes', '❌ Required'],
-        ['Hindi AI Captions', '✅ Yes', '✅ Yes', '❌ No', '❌ No'],
-        ['All Tools in One', '✅ Yes', '⚠️ Partial', '⚠️ Partial', '✅ Yes'],
-      ],
-    },
     { type: 'h2', text: 'Frequently Asked Questions' },
     { type: 'faq', q: 'Is speed ramp free in CutEdit?', a: 'Yes. Speed ramp is completely free in CutEdit. There is no subscription or one-time payment required. All speed effects including slow motion, fast forward, and cinematic speed ramp are free.' },
     { type: 'faq', q: 'Does CutEdit add a watermark to speed ramp videos?', a: 'No. CutEdit never adds a watermark to your exported videos. Your content is 100% yours.' },
@@ -101,7 +87,6 @@ export default function BlogPost() {
           </div>
           <h1 className={styles.title}>{post.title}</h1>
         </div>
-
         <article className={styles.article}>
           {post.content.map((block, i) => {
             if (block.type === 'intro') return <p key={i} className={styles.intro}>{block.text}</p>
@@ -121,28 +106,6 @@ export default function BlogPost() {
                   </li>
                 ))}
               </ol>
-            )
-            if (block.type === 'table') return (
-              <div key={i} style={{overflowX:'auto',margin:'8px 0'}}>
-                <table style={{width:'100%',borderCollapse:'collapse',fontSize:'14px'}}>
-                  <thead>
-                    <tr>
-                      {block.headers.map((h,j)=>(
-                        <th key={j} style={{padding:'12px 16px',textAlign:'left',borderBottom:'1px solid rgba(138,92,246,0.2)',color:'#c4b5fd',fontFamily:'Syne,sans-serif',fontWeight:700}}>{h}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {block.rows.map((row,j)=>(
-                      <tr key={j} style={{borderBottom:'1px solid rgba(138,92,246,0.08)'}}>
-                        {row.map((cell,k)=>(
-                          <td key={k} style={{padding:'12px 16px',color:k===0?'#f0eeff':'#8b8aaa'}}>{cell}</td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
             )
             if (block.type === 'faq') return (
               <div key={i} className={styles.faq}>
