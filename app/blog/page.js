@@ -8,6 +8,13 @@ export const metadata = {
 }
 
 const posts = [
+{
+  date: 'May 2026',
+  tag: 'Feature',
+  title: 'Free Speed Ramp Effect for Android — Slow Motion, Fast Forward and Cinematic Transitions',
+  excerpt: 'Add cinematic speed ramp, slow motion and fast forward effects to your videos for free on Android. No watermark, works offline on all phones.',
+  slug: 'speed-ramp-android-free',
+},
   {
     date: 'May 2026',
     tag: 'Feature',

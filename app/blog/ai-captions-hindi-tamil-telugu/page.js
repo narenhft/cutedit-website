@@ -35,7 +35,7 @@ const post = {
       ],
     },
     { type: 'p', text: 'This means a creator from Delhi speaking Hindi can reach audiences in Tamil Nadu, Karnataka, Bengal, and Maharashtra — without recording separate videos or hiring translators.' },
-    { type: 'h2', text: 'Why AI Captions Matter for Indian Creators in 2025' },
+    { type: 'h2', text: 'Why AI Captions Matter for Indian Creators in 2026' },
     { type: 'h3', text: 'More Views on Instagram Reels and YouTube Shorts' },
     { type: 'p', text: 'Instagram and YouTube algorithms favor videos that keep viewers engaged. Captions increase watch time because viewers can follow along even without sound. More watch time means more reach.' },
     { type: 'h3', text: 'Reach Audiences Across India' },
