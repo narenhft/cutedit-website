@@ -1,29 +1,26 @@
 import flags from '../../flags'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 export const metadata = {
-  title: 'Blog — CutEdit',
-  description: 'Tips, tutorials and updates from the CutEdit team.',
+  title: 'Blog — CutEdit | Video Editing Tips & Tutorials',
+  description: 'Video editing tips, reels tutorials, and AI caption guides for Indian creators using CutEdit.',
 }
 
 const posts = [
   {
-    date: 'May 2025',
-    tag: 'Tutorial',
-    title: '5 AI editing tricks that save hours of work',
-    excerpt: 'Discover how CutEdit\'s AI features can automate the most time-consuming parts of video editing.',
+    date: 'May 2026',
+    tag: 'Feature',
+    title: 'Free AI Caption Generator for Videos in Hindi, Tamil, Telugu and More',
+    excerpt: 'Speak in Hindi or English and get automatic captions in Tamil, Telugu, Kannada, Bengali, Marathi — free, offline, no internet needed.',
+    slug: 'ai-captions-hindi-tamil-telugu',
   },
   {
-    date: 'Apr 2025',
-    tag: 'Update',
-    title: 'Introducing Auto Captions — now in CutEdit',
-    excerpt: 'We launched one of our most-requested features: AI-generated subtitles in multiple languages.',
-  },
-  {
-    date: 'Mar 2025',
+    date: 'May 2026',
     tag: 'Guide',
-    title: 'How to make Reels that get views in 2025',
-    excerpt: 'A deep dive into aspect ratios, hooks, pacing, and the formats that Instagram\'s algorithm loves.',
+    title: 'Best Free Video Editor for Android in 2025 — One App Replaces All',
+    excerpt: 'Stop downloading 5 different apps. CutEdit packs video trimmer, GIF maker, AI captions, audio extractor, compressor and speed ramp — all in one free app.',
+    slug: 'one-app-for-all',
   },
 ]
 
