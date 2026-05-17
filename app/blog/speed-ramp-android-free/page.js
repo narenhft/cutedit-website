@@ -63,7 +63,7 @@ const post = {
     { type: 'h3', text: 'Product Videos and Unboxing' },
     { type: 'p', text: 'Slow down the reveal moment. Fast forward the setup. Speed ramp adds premium production value to product videos — making even simple phone-shot content look professional.' },
     { type: 'h3', text: 'Wedding and Event Videos' },
-    { type: 'p', text', text: 'Capture the emotional peak moments — the ring exchange, the first look, the celebration — in slow motion. Speed ramp these moments for a cinematic wedding highlight reel.' },
+    { type: 'p', text: 'Capture the emotional peak moments — the ring exchange, the first look, the celebration — in slow motion. Speed ramp these moments for a cinematic wedding highlight reel.' },
     { type: 'h2', text: 'CutEdit Speed Ramp vs Other Apps' },
     {
       type: 'table',
