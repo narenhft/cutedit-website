@@ -15,6 +15,7 @@ export default function Footer() {
           {flags.BLOG_ENABLED && <Link href="/blog">Blog</Link>}
           <Link href="/contact">Contact</Link>
           <a href="https://play.google.com/store/apps/details?id=com.framesnap.app" target="_blank" rel="noopener noreferrer">Play Store</a>
+	  <a href="https://sites.google.com/view/cutedit-privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
         </div>
       </div>
       <div className={styles.bottom}>
