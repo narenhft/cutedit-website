@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
           gtag('js', new Date());
           gtag('config', 'G-82JZ92Z7KV');
         `}} />
+	 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5345619282627829" crossorigin="anonymous"></script>
       </head>
       <body>
         <Navbar />
