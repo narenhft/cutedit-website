@@ -102,7 +102,7 @@ export default function BlogPost() {
               <ol key={i} className={styles.bullets}>
                 {block.items.map((item, j) => (
                   <li key={j}>
-                    <strong style={{color:'#8a5cf6',marginRight:'8px'}}>{j+1}.</strong>{item}
+                    <strong style={{color:'#E65100',marginRight:'8px'}}>{j+1}.</strong>{item}
                   </li>
                 ))}
               </ol>

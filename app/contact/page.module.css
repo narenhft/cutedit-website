@@ -72,12 +72,12 @@
 
 .infoLink {
   font-size: 14px;
-  color: #8a5cf6;
+  color: #E65100;
   transition: color 0.2s;
 }
 
 .infoLink:hover {
-  color: #a78bfa;
+  color: #FF8A3D;
 }
 
 /* Form */
@@ -110,7 +110,7 @@
 .field input,
 .field textarea {
   background: var(--bg3);
-  border: 1px solid rgba(138, 92, 246, 0.15);
+  border: 1px solid rgba(230, 81, 0, 0.15);
   border-radius: 10px;
   padding: 14px 16px;
   color: #f0eeff;
@@ -128,7 +128,7 @@
 
 .field input:focus,
 .field textarea:focus {
-  border-color: #8a5cf6;
+  border-color: #E65100;
 }
 
 .success {

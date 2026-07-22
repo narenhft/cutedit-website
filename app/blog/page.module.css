@@ -58,7 +58,7 @@
 }
 
 .post:hover {
-  border-color: rgba(138, 92, 246, 0.4);
+  border-color: rgba(230, 81, 0, 0.4);
   background: var(--bg3);
   transform: translateX(6px);
 }
@@ -75,7 +75,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #8a5cf6;
+  color: #E65100;
   background: rgba(138, 92, 246, 0.1);
   border: 1px solid rgba(138, 92, 246, 0.2);
   padding: 4px 10px;
@@ -105,7 +105,7 @@
 .readMore {
   font-size: 13px;
   font-weight: 600;
-  color: #8a5cf6;
+  color: #FF8A3D;
   transition: color 0.2s;
 }
 

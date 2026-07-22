@@ -7,7 +7,7 @@
   padding: 0 48px;
   background: rgba(8, 8, 16, 0.95);
   backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(138, 92, 246, 0.25);
+  border-bottom: 1px solid rgba(230, 81, 0, 0.25);
   height: 72px;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
 }
 
 .logoMark {
-  color: #8a5cf6;
+  color: #E65100;
   font-size: 20px;
 }
 
@@ -62,15 +62,15 @@
   font-weight: 700 !important;
   font-size: 13px !important;
   color: #fff !important;
-  background: #8a5cf6;
+  background: #E65100;
   padding: 9px 18px;
   border-radius: 8px;
   transition: all 0.2s !important;
-  box-shadow: 0 0 20px rgba(138, 92, 246, 0.3);
+  box-shadow: 0 0 20px rgba(230, 81, 0, 0.3);
 }
 
 .cta:hover {
-  background: #a78bfa;
+  background: #FF8A3D;
   transform: translateY(-1px);
 }
 
@@ -107,7 +107,7 @@
     padding: 32px 24px;
     gap: 24px;
     display: none;
-    border-bottom: 1px solid rgba(138, 92, 246, 0.15);
+    border-bottom: 1px solid rgba(230, 81, 0, 0.15);
   }
 
   .links.open {
