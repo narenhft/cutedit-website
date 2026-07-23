@@ -139,20 +139,20 @@ export default function BlogPost() {
               </div>
             )
             if (block.type === 'cta') return (
-              <div key={i} className={styles.cta}>
-                <h3>Download CutEdit — Free Product Showcase Video Maker</h3>
-                <p>Sarees, food, jewellery, woodwork — shoot in order, get a polished reel. Free, offline, no watermark.</p>
-                
-                  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary"
-                >
-                  Download on Google Play
-                </a>
-                <p className={styles.ctaSub}>Free · Offline · Unlimited Exports · No Watermark</p>
-              </div>
-            )
+  <div key={i} className={styles.cta}>
+    <h3>Download CutEdit — Free Product Showcase Video Maker</h3>
+    <p>Sarees, food, jewellery, woodwork — shoot in order, get a polished reel. Free, offline, no watermark.</p>
+    
+      href="https://play.google.com/store/apps/details?id=com.framesnap.app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn-primary"
+    >
+      Download on Google Play
+    </a>
+    <p className={styles.ctaSub}>Free · Offline · Unlimited Exports · No Watermark</p>
+  </div>
+)
             return null
           })}
         </article>
