@@ -133,7 +133,8 @@ export default function BlogPost() {
                 <h3>Download CutEdit — Free Food Vlog & Reel Maker</h3>
                 <p>Upload your dish first, pick the Food filter, and let CutEdit handle the rest. Free, fast, no watermark.</p>
                 
-                  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
+                  <a
+		  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
