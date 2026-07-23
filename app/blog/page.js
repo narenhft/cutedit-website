@@ -9,6 +9,13 @@ export const metadata = {
 
 const posts = [
 {
+  date: 'July 2026',
+  tag: 'Guide',
+  title: 'How to Make Product Showcase Videos for Sarees, Food, Jewellery & Handmade Products',
+  excerpt: 'Shoot your clips in order — CutEdit auto-applies filters, music and transitions. Perfect for sarees, food, jewellery, woodwork, and faceless product videos. Free, offline, no editing skills needed.',
+  slug: 'product-showcase-videos',
+},
+{
   date: 'May 2026',
   tag: 'Feature',
   title: 'Free Speed Ramp Effect for Android — Slow Motion, Fast Forward and Cinematic Transitions',
