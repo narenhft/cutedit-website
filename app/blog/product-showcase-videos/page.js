@@ -1,9 +1,20 @@
 import styles from '../one-app-for-all/page.module.css'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'How to Make Product Showcase Videos for Sarees, Food, Jewellery & Handmade Products — Free on Android',
   description: 'Turn your product photos and clips into a scroll-stopping reel — sarees, food, jewellery, woodwork, any product. Just shoot in order, CutEdit does the rest. Free, offline, no editing skills needed.',
   keywords: 'how to make ai video for jewelry, how to make reels for jewellery, how to make food video for tiktok, how to make food video for youtube, how to make ai video food, how to make woodworking videos, how to make product video with ai free, how to make product review videos without showing face, how to make vlog without showing face, how to make vlog with phone, how to make video for beginners',
+  alternates: {
+    canonical: 'https://cutedit.co.in/blog/product-showcase-videos',
+  },
+  openGraph: {
+    title: 'How to Make Product Showcase Videos for Sarees, Food, Jewellery & Handmade Products',
+    description: 'Shoot in order, CutEdit auto-applies filters, music and transitions. Free video maker for sarees, food, jewellery, woodwork and faceless product videos.',
+    url: 'https://cutedit.co.in/blog/product-showcase-videos',
+    siteName: 'CutEdit',
+    type: 'article',
+  },
 }
 
 const post = {
@@ -60,13 +71,33 @@ const post = {
     { type: 'faq', q: 'Can I make a product video without showing my face?', a: 'Yes. CutEdit works entirely with product or process footage — no face or voice required unless you choose to add a voiceover.' },
     { type: 'faq', q: 'Can I add my shop name and logo to my videos?', a: 'Yes, with Premium — your shop name, logo, and phone number can appear throughout the reel, along with a personalized closing card.' },
     { type: 'faq', q: 'Does CutEdit add a watermark on the free version?', a: 'No. Free exports are unlimited and watermark-free — though ads are shown. Premium removes ads entirely.' },
+    { type: 'link', text: 'Planning a wedding, birthday or travel reel instead?', href: '/blog/memory-reels-wedding-birthday-travel', linkText: 'Check out our memory reel guide →' },
     { type: 'cta' },
   ],
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": post.content
+    .filter(block => block.type === 'faq')
+    .map(block => ({
+      "@type": "Question",
+      "name": block.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": block.a
+      }
+    }))
 }
 
 export default function BlogPost() {
   return (
     <div className={styles.page}>
+    <script
+     type="application/ld+json"
+     dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+    />
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.meta}>
@@ -82,6 +113,11 @@ export default function BlogPost() {
             if (block.type === 'h2') return <h2 key={i} className={styles.h2}>{block.text}</h2>
             if (block.type === 'h3') return <h3 key={i} className={styles.h3}>{block.text}</h3>
             if (block.type === 'p') return <p key={i} className={styles.p}>{block.text}</p>
+            if (block.type === 'link') return (
+              <p key={i} className={styles.p}>
+              {block.text} <Link href={block.href} style={{color:'#E65100'}}>{block.linkText}</Link>
+              </p>
+            )
             if (block.type === 'bullets') return (
               <ul key={i} className={styles.bullets}>
                 {block.items.map((item, j) => <li key={j}>{item}</li>)}

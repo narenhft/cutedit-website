@@ -1,9 +1,20 @@
 import styles from '../one-app-for-all/page.module.css'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'How to Make Memory Reels — Wedding, Birthday, Sports & Travel Highlights (Free on Android)',
   description: 'Turn your wedding, birthday, sports day or travel footage into a beat-synced highlight reel. Pick a style — cinematic, flash-cut, montage, party, aesthetic — and the music drives the cuts. Free on Android.',
   keywords: 'how to make travel videos for beginners, how to make video for beginners, wedding highlight reel maker, birthday reel maker android, sports highlight video maker, beat synced video editor',
+  alternates: {
+    canonical: 'https://cutedit.co.in/blog/memory-reels-wedding-birthday-travel',
+  },
+  openGraph: {
+    title: 'How to Make Memory Reels — Wedding, Birthday, Sports & Travel Highlights',
+    description: 'Pick a style — cinematic, flash-cut, montage, party, aesthetic — and CutEdit syncs your cuts to the music. Free wedding, birthday, sports and travel reel maker.',
+    url: 'https://cutedit.co.in/blog/memory-reels-wedding-birthday-travel',
+    siteName: 'CutEdit',
+    type: 'article',
+  },
 }
 
 const post = {
@@ -66,13 +77,34 @@ const post = {
     { type: 'faq', q: 'Can I make a birthday or sports highlight reel without editing skills?', a: 'Yes. Pick your style, pick your music, and CutEdit handles the cuts, transitions, and pacing automatically.' },
     { type: 'faq', q: 'Does the music actually control the cuts, or is it just background music?', a: 'The cuts are timed to sync with the music\'s beat — it\'s not just background audio, the editing rhythm follows the song.' },
     { type: 'faq', q: 'Is there a watermark on the free version?', a: 'No. Free exports are unlimited and watermark-free, though ads are shown. Premium removes ads.' },
+    { type: 'link', text: 'Making a product showcase reel instead?', href: '/blog/product-showcase-videos', linkText: 'Check out our product video guide →' },
     { type: 'cta' },
   ],
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": post.content
+    .filter(block => block.type === 'faq')
+    .map(block => ({
+      "@type": "Question",
+      "name": block.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": block.a
+      }
+    }))
+}
+
 export default function BlogPost() {
   return (
-    <div className={styles.page}>
+  <div className={styles.page}>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+    />
+    <div className={styles.container}>
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.meta}>
@@ -88,6 +120,11 @@ export default function BlogPost() {
             if (block.type === 'h2') return <h2 key={i} className={styles.h2}>{block.text}</h2>
             if (block.type === 'h3') return <h3 key={i} className={styles.h3}>{block.text}</h3>
             if (block.type === 'p') return <p key={i} className={styles.p}>{block.text}</p>
+            if (block.type === 'link') return (
+              <p key={i} className={styles.p}>
+               {block.text} <Link href={block.href} style={{color:'#E65100'}}>{block.linkText}</Link>
+              </p>
+            )
             if (block.type === 'bullets') return (
               <ul key={i} className={styles.bullets}>
                 {block.items.map((item, j) => <li key={j}>{item}</li>)}
