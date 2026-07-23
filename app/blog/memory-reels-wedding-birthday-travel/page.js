@@ -150,7 +150,8 @@ export default function BlogPost() {
                 <h3>Download CutEdit — Free Memory Reel Maker</h3>
                 <p>Wedding, birthday, sports, travel — pick a style, and the music drives the cuts. Free, no watermark.</p>
                 
-                  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
+                  <a
+		  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
