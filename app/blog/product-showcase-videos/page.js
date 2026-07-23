@@ -94,10 +94,10 @@ const faqSchema = {
 export default function BlogPost() {
   return (
     <div className={styles.page}>
-    <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-    />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.meta}>
@@ -115,7 +115,7 @@ export default function BlogPost() {
             if (block.type === 'p') return <p key={i} className={styles.p}>{block.text}</p>
             if (block.type === 'link') return (
               <p key={i} className={styles.p}>
-              {block.text} <Link href={block.href} style={{color:'#E65100'}}>{block.linkText}</Link>
+                {block.text} <Link href={block.href} style={{color:'#E65100'}}>{block.linkText}</Link>
               </p>
             )
             if (block.type === 'bullets') return (
@@ -139,20 +139,20 @@ export default function BlogPost() {
               </div>
             )
             if (block.type === 'cta') return (
-  <div key={i} className={styles.cta}>
-    <h3>Download CutEdit — Free Product Showcase Video Maker</h3>
-    <p>Sarees, food, jewellery, woodwork — shoot in order, get a polished reel. Free, offline, no watermark.</p>
-    
-      href="https://play.google.com/store/apps/details?id=com.framesnap.app"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="btn-primary"
-    >
-      Download on Google Play
-    </a>
-    <p className={styles.ctaSub}>Free · Offline · Unlimited Exports · No Watermark</p>
-  </div>
-)
+              <div key={i} className={styles.cta}>
+                <h3>Download CutEdit — Free Product Showcase Video Maker</h3>
+                <p>Sarees, food, jewellery, woodwork — shoot in order, get a polished reel. Free, offline, no watermark.</p>
+                
+                  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  Download on Google Play
+                </a>
+                <p className={styles.ctaSub}>Free · Offline · Unlimited Exports · No Watermark</p>
+              </div>
+            )
             return null
           })}
         </article>
