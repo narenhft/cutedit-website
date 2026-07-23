@@ -99,12 +99,11 @@ const faqSchema = {
 
 export default function BlogPost() {
   return (
-  <div className={styles.page}>
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-    />
-    <div className={styles.container}>
+    <div className={styles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.meta}>
@@ -122,7 +121,7 @@ export default function BlogPost() {
             if (block.type === 'p') return <p key={i} className={styles.p}>{block.text}</p>
             if (block.type === 'link') return (
               <p key={i} className={styles.p}>
-               {block.text} <Link href={block.href} style={{color:'#E65100'}}>{block.linkText}</Link>
+                {block.text} <Link href={block.href} style={{color:'#E65100'}}>{block.linkText}</Link>
               </p>
             )
             if (block.type === 'bullets') return (
@@ -150,8 +149,7 @@ export default function BlogPost() {
                 <h3>Download CutEdit — Free Memory Reel Maker</h3>
                 <p>Wedding, birthday, sports, travel — pick a style, and the music drives the cuts. Free, no watermark.</p>
                 
-                  <a
-		  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
+                  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
