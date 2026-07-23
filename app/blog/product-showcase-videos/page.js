@@ -143,7 +143,8 @@ export default function BlogPost() {
                 <h3>Download CutEdit — Free Product Showcase Video Maker</h3>
                 <p>Sarees, food, jewellery, woodwork — shoot in order, get a polished reel. Free, offline, no watermark.</p>
                 
-                  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
+                  <a
+		  href="https://play.google.com/store/apps/details?id=com.framesnap.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
