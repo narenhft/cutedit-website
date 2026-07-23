@@ -184,3 +184,20 @@
   margin-bottom: 48px;
   letter-spacing: -0.02em;
 }
+.socials {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.socials a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #E65100;
+  transition: color 0.2s;
+}
+
+.socials a:hover {
+  color: #FF8A3D;
+}

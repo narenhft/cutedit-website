@@ -21,6 +21,10 @@ export default function Contact() {
             <span className={styles.arrow}>→</span>
           </a>
           <p className={styles.note}>We typically respond within 24 hours on working days.</p>
+<div className={styles.socials}>
+  <a href="https://www.youtube.com/@CutEditapp" target="_blank" rel="noopener noreferrer">YouTube</a>
+  <a href="https://instagram.com/cuteditapp" target="_blank" rel="noopener noreferrer">Instagram</a>
+</div>
         </div>
       </div>
     </div>
