@@ -18,6 +18,13 @@ const posts = [
 {
   date: 'July 2026',
   tag: 'Guide',
+  title: 'How to Make a Food Vlog Reel — Step by Step',
+  excerpt: 'Upload your final dish first, pick the Food filter, and CutEdit builds your reel automatically. Same method works for sarees, jewellery, woodwork and travel too.',
+  slug: 'food-vlog-reel-guide',
+},
+{
+  date: 'July 2026',
+  tag: 'Guide',
   title: 'How to Make Memory Reels — Wedding, Birthday, Sports & Travel Highlights',
   excerpt: 'Pick a style — cinematic, flash-cut, montage, party, aesthetic — and CutEdit syncs your cuts to the music. Perfect for wedding, birthday, sports and travel reels. Free on Android.',
   slug: 'memory-reels-wedding-birthday-travel',

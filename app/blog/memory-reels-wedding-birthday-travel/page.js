@@ -78,6 +78,7 @@ const post = {
     { type: 'faq', q: 'Does the music actually control the cuts, or is it just background music?', a: 'The cuts are timed to sync with the music\'s beat — it\'s not just background audio, the editing rhythm follows the song.' },
     { type: 'faq', q: 'Is there a watermark on the free version?', a: 'No. Free exports are unlimited and watermark-free, though ads are shown. Premium removes ads.' },
     { type: 'link', text: 'Making a product showcase reel instead?', href: '/blog/product-showcase-videos', linkText: 'Check out our product video guide →' },
+    { type: 'link', text: 'Making a food vlog specifically?', href: '/blog/food-vlog-reel-guide', linkText: 'See our step-by-step food reel guide →' },
     { type: 'cta' },
   ],
 }

@@ -72,6 +72,7 @@ const post = {
     { type: 'faq', q: 'Can I add my shop name and logo to my videos?', a: 'Yes, with Premium — your shop name, logo, and phone number can appear throughout the reel, along with a personalized closing card.' },
     { type: 'faq', q: 'Does CutEdit add a watermark on the free version?', a: 'No. Free exports are unlimited and watermark-free — though ads are shown. Premium removes ads entirely.' },
     { type: 'link', text: 'Planning a wedding, birthday or travel reel instead?', href: '/blog/memory-reels-wedding-birthday-travel', linkText: 'Check out our memory reel guide →' },
+    { type: 'link', text: 'Making a food vlog specifically?', href: '/blog/food-vlog-reel-guide', linkText: 'See our step-by-step food reel guide →' },
     { type: 'cta' },
   ],
 }
