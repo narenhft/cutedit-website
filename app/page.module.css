@@ -184,6 +184,58 @@
   margin-bottom: 48px;
   letter-spacing: -0.02em;
 }
+.center {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.emailCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin: 32px 0 16px;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.emailCard:hover {
+  border-color: rgba(230, 81, 0, 0.4);
+  background: var(--bg3);
+}
+
+.emailIcon {
+  font-size: 28px;
+}
+
+.emailLabel {
+  font-size: 13px;
+  color: #8b8aaa;
+  margin-bottom: 4px;
+}
+
+.emailAddr {
+  font-size: 17px;
+  color: #f0eeff;
+  font-weight: 600;
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 20px;
+  color: #E65100;
+}
+
+.note {
+  font-size: 14px;
+  color: #4a4870;
+  margin-bottom: 8px;
+}
+
 .socials {
   display: flex;
   gap: 24px;
@@ -192,6 +244,9 @@
 }
 
 .socials a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   font-weight: 600;
   color: #E65100;
