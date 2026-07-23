@@ -16,6 +16,13 @@ const posts = [
   slug: 'product-showcase-videos',
 },
 {
+  date: 'July 2026',
+  tag: 'Guide',
+  title: 'How to Make Memory Reels — Wedding, Birthday, Sports & Travel Highlights',
+  excerpt: 'Pick a style — cinematic, flash-cut, montage, party, aesthetic — and CutEdit syncs your cuts to the music. Perfect for wedding, birthday, sports and travel reels. Free on Android.',
+  slug: 'memory-reels-wedding-birthday-travel',
+},
+{
   date: 'May 2026',
   tag: 'Feature',
   title: 'Free Speed Ramp Effect for Android — Slow Motion, Fast Forward and Cinematic Transitions',
