@@ -9,6 +9,20 @@ export const metadata = {
 
 const posts = [
 {
+  date: 'October 2026',
+  tag: 'Feature',
+  title: 'Captions for Reels and YouTube Shorts: A Ready Caption for Every Reel (Clothing, Jewellery, Food and More)',
+  excerpt: 'Generate your reel and get a caption made for it. Plus caption ideas for kurtis, sarees, lehengas, sherwanis, jewellery, food and vlogs. COD, WhatsApp booking and hooks included.',
+  slug: 'reel-captions-instagram-youtube-shorts',
+},
+{
+  date: 'October 2026',
+  tag: 'Feature',
+  title: 'AI Model Look: Show Your Saree, Lehenga or Kurta on a Model in One Tap',
+  excerpt: 'Upload a fabric photo, pick a category, and CutEdit shows a model wearing it. Add it to your reel as an overlay. No photoshoot, no editing skills, no showing your face.',
+  slug: 'ai-model-look-fabric-to-model-reel',
+},
+{
   date: 'July 2026',
   tag: 'Guide',
   title: 'How to Make Product Showcase Videos for Sarees, Food, Jewellery & Handmade Products',
