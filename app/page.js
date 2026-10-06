@@ -39,13 +39,15 @@ export default function Home() {
             <div className={`${styles.rightCol} fade-up-2`}>
               <p className={styles.visualTitle}>Raw clips to Instagram post in a minute</p>
               <div className={styles.visual}>
-                <div className={`${styles.phone} ${styles.phoneBack}`}>
-                  <img src="/images/2output.png" alt="Raw fabric clip" />
-                  <span className={styles.chipTop}>Your raw clips</span>
-                </div>
-                <span className={styles.aiBadge}>✦ AI cuts, trims &amp; adds model look</span>
-                <div className={`${styles.phone} ${styles.phoneFront}`}>
-                  <img src="/images/promise_reel_final.png" alt="Saree shown on a model" />
+                <div className={styles.stage}>
+                  <div className={`${styles.phone} ${styles.phoneBack}`}>
+                    <img src="/images/2output.png" alt="Raw fabric clip" />
+                    <span className={styles.chipTop}>Raw clips</span>
+                  </div>
+                  <span className={styles.aiBadge}>✦ AI cuts, trims &amp; adds model look</span>
+                  <div className={`${styles.phone} ${styles.phoneFront}`}>
+                    <img src="/images/promise_reel_final.png" alt="Saree shown on a model" />
+                  </div>
                 </div>
                 <div className={styles.captionFloat}>
                   <span className={styles.captionLabel}>Caption &amp; hashtags, written for you</span>
@@ -69,7 +71,7 @@ export default function Home() {
             {[
               { title: 'AutoVlog – Sequential', desc: 'Ideal for product sellers, artisans and process videos. Keeps your upload order.', img: '/images/autovlog-card.jpg', pos: 'center' },
               { title: 'Aesthetic Reel – Beat Synced', desc: 'Perfect for travel, events and memories. Cuts sync to the music beats.', img: '/images/aesthetic-reel.jpg', pos: '55% center' },
-              { title: 'Pro Timeline Editor', desc: 'Full control with AI captions, speed ramp and advanced editing tools.', img: '/images/timeline.png', pos: 'center 48%' },
+              { title: 'Pro Timeline Editor', desc: 'Full control with AI captions, speed ramp and advanced editing tools.', img: '/images/timeline.png', pos: 'center' },
             ].map((p) => (
               <div key={p.title} className={styles.prodCard}>
                 <div className={styles.prodImg}>

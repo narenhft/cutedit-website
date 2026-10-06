@@ -141,3 +141,7 @@ body::before {
 .fade-up-2 { animation: fadeUp 0.7s 0.12s ease both; }
 .fade-up-3 { animation: fadeUp 0.7s 0.24s ease both; }
 .fade-up-4 { animation: fadeUp 0.7s 0.36s ease both; }
+
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+}
