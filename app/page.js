@@ -67,7 +67,7 @@ export default function Home() {
           <h2 className={styles.featHeading}>Our Core Products</h2>
           <div className={styles.prodGrid}>
             {[
-              { title: 'AutoVlog – Sequential', desc: 'Ideal for product sellers, artisans and process videos. Keeps your upload order.', img: '/images/autovlog.jpg', pos: 'center' },
+              { title: 'AutoVlog – Sequential', desc: 'Ideal for product sellers, artisans and process videos. Keeps your upload order.', img: '/images/autovlog-card.jpg', pos: 'center' },
               { title: 'Aesthetic Reel – Beat Synced', desc: 'Perfect for travel, events and memories. Cuts sync to the music beats.', img: '/images/aesthetic-reel.jpg', pos: '55% center' },
               { title: 'Pro Timeline Editor', desc: 'Full control with AI captions, speed ramp and advanced editing tools.', img: '/images/timeline.png', pos: 'center 48%' },
             ].map((p) => (
