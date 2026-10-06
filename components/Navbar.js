@@ -30,7 +30,7 @@ export default function Navbar() {
               className={styles.cta}
               onClick={() => setOpen(false)}
             >
-              ▶ Get App
+              Start Free Reel
             </a>
           </li>
         </ul>

@@ -22,7 +22,6 @@ export default function Home() {
               </h1>
               <p className={styles.heroSub}>
                 See your fabric on a model, with captions and hashtags ready for Reels and Shorts.
-                Lehenga, saree, kurti, gown, sherwani and process videos.
               </p>
               <div className={styles.heroCtas}>
                 <a href={START_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
@@ -36,29 +35,22 @@ export default function Home() {
               <p className={styles.trust}>100+ product sellers using CutEdit</p>
             </div>
 
-            {/* Right: end-to-end flow */}
-            <div className={`${styles.flow} fade-up-2`}>
-              <p className={styles.flowLabel}>1. Upload your raw clips</p>
-              <div className={styles.clips}>
-                <img src="/images/1output.png" alt="Raw fabric clip 1" />
-                <img src="/images/2output.png" alt="Raw fabric clip 2" />
-                <img src="/images/2output.png" alt="Raw fabric clip 3" />
+            {/* Right: phone visual */}
+            <div className={`${styles.visual} fade-up-2`}>
+              <div className={`${styles.phone} ${styles.phoneBack}`}>
+                <img src="/images/2output.png" alt="Raw fabric clip" />
+                <span className={styles.upload} aria-hidden="true">↑</span>
               </div>
-
-              <p className={styles.flowLabel}>2. AI cuts, trims and adds the model look</p>
-              <div className={styles.result}>
-                <div className={styles.modelWrap}>
-                  <img src="/images/promise_reel_final.png" alt="Saree on a model" />
-                  <span className={styles.chip}>Model look applied</span>
-                </div>
-                <div className={styles.captionCard}>
-                  <p className={styles.flowLabel}>3. Caption &amp; hashtags</p>
-                  <p className={styles.captionText}>
-                    Wine Banarasi silk saree with gold zari work. DM or WhatsApp to book.
-                  </p>
-                  <p className={styles.tags}>#banarasisaree #sareelove #reelsindia</p>
-                  <span className={styles.ready}>Ready to post in Reels &amp; Shorts</span>
-                </div>
+              <span className={styles.aiBadge}>✦ AI</span>
+              <div className={`${styles.phone} ${styles.phoneFront}`}>
+                <img src="/images/promise_reel_final.png" alt="Saree shown on a model" />
+                <span className={styles.chip}>Model look applied</span>
+              </div>
+              <div className={styles.captionFloat}>
+                <p className={styles.captionText}>
+                  Wine Banarasi silk saree with gold zari work. DM or WhatsApp to book.
+                </p>
+                <p className={styles.tags}>#banarasisaree #sareelove #reelsindia</p>
               </div>
             </div>
           </div>
