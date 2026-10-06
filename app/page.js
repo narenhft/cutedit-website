@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 // ---- EDIT THESE LINKS LATER ----
 const START_URL = 'https://play.google.com/store/apps/details?id=com.framesnap.app' // Start Free Reel (replace when you have the link)
-const DEMO_URL = '#' // your Instagram reel link goes here
+const DEMO_URL = 'https://www.instagram.com/reel/DeJDfYLpU9S/' // your Instagram reel link goes here
 // --------------------------------
 
 export default function Home() {
