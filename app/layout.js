@@ -3,17 +3,21 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'CutEdit — Free AI Video Editor for Android | No Watermark',
-  description: 'CutEdit is a free offline AI video editor for Android. Make reels, add AI captions in Hindi & more, trim, compress, extract audio — no watermark, no subscription.',
-  keywords: 'free video editor android, offline video editor, ai captions hindi, reels editor, no watermark video editor, video trimmer, video compressor, gif maker, speed ramp, slow motion, audio extractor, indian video editor, budget phone video editor',
+  title: 'CutEdit — Faceless Reel Maker for Android',
+  description:
+    'Turn a fabric or product photo into a reel with an AI model wearing your clothes. Add captions for kurti, saree and lehenga reels. Faceless reel maker for Android.',
+  keywords:
+    'ai model wearing my clothes, fabric to model ai, clothing reel maker, saree reel video, kurti reels, lehenga reel, ai fashion model video, product photo to video ai, faceless reel maker, make reels without showing face, instagram reel captions for clothing, boutique reels app, video editor android',
   openGraph: {
-    title: 'CutEdit — Free AI Video Editor | No Watermark',
-    description: 'Free offline video editor for Indian creators. AI captions, reels, GIF maker, compressor — no watermark, no paywall, no internet needed.',
+    title: 'CutEdit — Turn Fabric Photos into Reels with an AI Model',
+    description:
+      'Upload a fabric or clothing photo, pick a category, and get a reel with an AI model wearing it, plus captions for Instagram and YouTube Shorts.',
     url: 'https://cutedit.co.in',
     siteName: 'CutEdit',
     type: 'website',
+    locale: 'en_IN',
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (

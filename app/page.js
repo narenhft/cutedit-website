@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 // ---- EDIT THESE LINKS LATER ----
 const START_URL = 'https://play.google.com/store/apps/details?id=com.framesnap.app' // Start Free Reel (replace when you have the link)
-const DEMO_URL = 'https://www.instagram.com/reel/DeJDfYLpU9S/' // your Instagram reel link goes here
+const DEMO_URL = '#' // your Instagram reel link goes here
 // --------------------------------
 
 export default function Home() {
@@ -67,14 +67,13 @@ export default function Home() {
           <h2 className={styles.featHeading}>Our Core Products</h2>
           <div className={styles.prodGrid}>
             {[
-              { icon: '🎬', title: 'AutoVlog – Sequential', desc: 'Ideal for product sellers, artisans and process videos. Keeps your upload order.', img: '' },
-              { icon: '🎵', title: 'Aesthetic Reel – Beat Synced', desc: 'Perfect for travel, events and memories. Cuts sync to the music beats.', img: '' },
-              { icon: '🎞️', title: 'Pro Timeline Editor', desc: 'Full control with AI captions, speed ramp and advanced editing tools.', img: '' },
+              { title: 'AutoVlog – Sequential', desc: 'Ideal for product sellers, artisans and process videos. Keeps your upload order.', img: '/images/autovlog.jpg', pos: 'center' },
+              { title: 'Aesthetic Reel – Beat Synced', desc: 'Perfect for travel, events and memories. Cuts sync to the music beats.', img: '/images/aesthetic-reel.jpg', pos: '55% center' },
+              { title: 'Pro Timeline Editor', desc: 'Full control with AI captions, speed ramp and advanced editing tools.', img: '/images/timeline.png', pos: 'center top' },
             ].map((p) => (
               <div key={p.title} className={styles.prodCard}>
                 <div className={styles.prodImg}>
-                  {/* Put image path in img above, e.g. '/images/autovlog.png' */}
-                  {p.img ? <img src={p.img} alt={p.title} /> : <span>{p.icon}</span>}
+                  <img src={p.img} alt={p.title} style={{ objectPosition: p.pos }} />
                 </div>
                 <h3>{p.title}</h3>
                 <p>{p.desc}</p>
@@ -92,7 +91,7 @@ export default function Home() {
             <div className={styles.tBox}>
               <p className={styles.tTitle}>Before (raw clips of a saree)</p>
               <div className={styles.tClips}>
-                <img src="/images/1output.png" alt="Raw saree clip" />
+                <img src="/images/1output.jpg" alt="Raw saree clip" />
                 <img src="/images/2output.png" alt="Raw saree clip" />
               </div>
             </div>
@@ -122,7 +121,7 @@ export default function Home() {
       {/* Features strip (unchanged) */}
       <section className={styles.features}>
         <div className="container">
-          <h2 className={styles.featHeading}>Why CutEdit</h2>
+          <h2 className={styles.featHeading}>Other tools</h2>
           <div className={styles.featGrid}>
             {[
               { icon: '⚡', title: 'Timeline Editor', desc: 'Full-featured timeline editor with multi-track support for precise control over your edits.' },
