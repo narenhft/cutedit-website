@@ -3,7 +3,8 @@ import styles from './page.module.css'
 
 // ---- EDIT THESE LINKS LATER ----
 const START_URL = 'https://play.google.com/store/apps/details?id=com.framesnap.app' // Start Free Reel (replace when you have the link)
-const DEMO_URL = 'https://www.instagram.com/reel/DeJDfYLpU9S/' // your Instagram reel link goes here
+const DEMO_URL = 'https://www.instagram.com/reel/DeJDfYLpU9S/' // hero: Watch 15-sec demo
+const SAMPLE_URL = 'https://www.instagram.com/reel/DeBgc5vJzIQ/' // transformation: Watch Sample
 // --------------------------------
 
 export default function Home() {
@@ -112,7 +113,7 @@ export default function Home() {
           </div>
           <p className={styles.free}>Every export is free. No hidden fees.</p>
           <div className={styles.sampleWrap}>
-            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+            <a href={SAMPLE_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
               Watch Sample
             </a>
           </div>
