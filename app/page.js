@@ -1,6 +1,11 @@
 import Link from 'next/link'
 import styles from './page.module.css'
 
+// ---- EDIT THESE LINKS LATER ----
+const START_URL = 'https://play.google.com/store/apps/details?id=com.framesnap.app' // Start Free Reel (replace when you have the link)
+const DEMO_URL = '#' // your Instagram reel link goes here
+// --------------------------------
+
 export default function Home() {
   return (
     <>
@@ -9,40 +14,116 @@ export default function Home() {
         <div className={styles.glow} />
         <div className={styles.gridBg} />
         <div className="container">
-          <div className={`${styles.heroContent} fade-up`}>
-            <span className="section-label">AI Video Editor</span>
-            <h1 className={styles.heroTitle}>
-              Edit Videos Like<br />
-              <span className={styles.gradient}>a Pro.</span><br />
-              Powered by AI.
-            </h1>
-            <p className={styles.heroSub}>
-              CutEdit brings studio-grade video editing to your Android phone.
-              Trim, enhance, add effects — all in seconds with AI assistance.
-            </p>
-            <div className={styles.heroCtas}>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.framesnap.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
-              >
-                <img src="/google-play-badge.png" alt="Get it on Google Play" height={40} />
-              </a>
-              <Link href="/products" className="btn-ghost">
-                See Features →
-              </Link>
+          <div className={styles.heroGrid}>
+            <div className={`${styles.heroText} fade-up`}>
+              <span className="section-label">For clothing sellers &amp; creators</span>
+              <h1 className={styles.heroTitle}>
+                Upload clips. Get reels in 60 seconds.
+              </h1>
+              <p className={styles.heroSub}>
+                See your fabric on a model, with captions and hashtags ready for Reels and Shorts.
+                Lehenga, saree, kurti, gown, sherwani and process videos.
+              </p>
+              <div className={styles.heroCtas}>
+                <a href={START_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                  Start Free Reel
+                </a>
+                <a href={DEMO_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+                  Watch 15-sec demo
+                </a>
+              </div>
+              <p className={styles.note}>No credit card · Every export is free</p>
+              <p className={styles.trust}>100+ product sellers using CutEdit</p>
             </div>
-            <div className={styles.badges}>
-              <span className={styles.badge}>✦ AI-Powered</span>
-              <span className={styles.badge}>✦ Free to Download</span>
-              <span className={styles.badge}>✦ Android</span>
+
+            {/* Right: end-to-end flow */}
+            <div className={`${styles.flow} fade-up-2`}>
+              <p className={styles.flowLabel}>1. Upload your raw clips</p>
+              <div className={styles.clips}>
+                <img src="/images/1output.png" alt="Raw fabric clip 1" />
+                <img src="/images/2output.png" alt="Raw fabric clip 2" />
+                <img src="/images/2output.png" alt="Raw fabric clip 3" />
+              </div>
+
+              <p className={styles.flowLabel}>2. AI cuts, trims and adds the model look</p>
+              <div className={styles.result}>
+                <div className={styles.modelWrap}>
+                  <img src="/images/promise_reel_final.png" alt="Saree on a model" />
+                  <span className={styles.chip}>Model look applied</span>
+                </div>
+                <div className={styles.captionCard}>
+                  <p className={styles.flowLabel}>3. Caption &amp; hashtags</p>
+                  <p className={styles.captionText}>
+                    Wine Banarasi silk saree with gold zari work. DM or WhatsApp to book.
+                  </p>
+                  <p className={styles.tags}>#banarasisaree #sareelove #reelsindia</p>
+                  <span className={styles.ready}>Ready to post in Reels &amp; Shorts</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features strip */}
+      {/* Core products */}
+      <section className={styles.products} id="products">
+        <div className="container">
+          <h2 className={styles.featHeading}>Our Core Products</h2>
+          <div className={styles.prodGrid}>
+            {[
+              { icon: '🎬', title: 'AutoVlog – Sequential', desc: 'Ideal for product sellers, artisans and process videos. Keeps your upload order.', img: '' },
+              { icon: '🎵', title: 'Aesthetic Reel – Beat Synced', desc: 'Perfect for travel, events and memories. Cuts sync to the music beats.', img: '' },
+              { icon: '🎞️', title: 'Pro Timeline Editor', desc: 'Full control with AI captions, speed ramp and advanced editing tools.', img: '' },
+            ].map((p) => (
+              <div key={p.title} className={styles.prodCard}>
+                <div className={styles.prodImg}>
+                  {/* Put image path in img above, e.g. '/images/autovlog.png' */}
+                  {p.img ? <img src={p.img} alt={p.title} /> : <span>{p.icon}</span>}
+                </div>
+                <h3>{p.title}</h3>
+                <p>{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* See the transformation */}
+      <section className={styles.transform}>
+        <div className="container">
+          <h2 className={styles.featHeading}>See the Transformation</h2>
+          <div className={styles.tGrid}>
+            <div className={styles.tBox}>
+              <p className={styles.tTitle}>Before (raw clips of a saree)</p>
+              <div className={styles.tClips}>
+                <img src="/images/1output.png" alt="Raw saree clip" />
+                <img src="/images/2output.png" alt="Raw saree clip" />
+              </div>
+            </div>
+            <div className={styles.tBox}>
+              <p className={styles.tTitle}>After (reel with model look)</p>
+              <div className={styles.tAfter}>
+                <img src="/images/promise_reel_final.png" alt="Reel with model look" />
+                <ul className={styles.checks}>
+                  <li>AI cut &amp; trim</li>
+                  <li>Applied filter</li>
+                  <li>Added music</li>
+                  <li>Superimposed model look</li>
+                  <li>Caption &amp; hashtags</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p className={styles.free}>Every export is free. No hidden fees.</p>
+          <div className={styles.sampleWrap}>
+            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+              Watch Sample
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Features strip (unchanged) */}
       <section className={styles.features}>
         <div className="container">
           <h2 className={styles.featHeading}>Why CutEdit</h2>
@@ -65,7 +146,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Banner */}
+      {/* CTA Banner (unchanged) */}
       <section className={styles.ctaBanner}>
         <div className="container">
           <div className={styles.bannerInner}>

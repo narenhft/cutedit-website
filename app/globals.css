@@ -106,7 +106,7 @@ body::before {
 .btn-ghost:hover {
   border-color: var(--purple);
   color: var(--purple-bright);
-  background: rgba(138, 92, 246, 0.08);
+  background: rgba(230, 81, 0, 0.1);
 }
 
 /* Section label */
