@@ -64,7 +64,7 @@
   font-size: 14px;
   font-weight: 600;
   color: var(--purple-bright);
-  margin-top: 20px;
+  margin-top: 6px;
 }
 
 /* Hero right: phone visual */
@@ -415,9 +415,22 @@
 }
 
 @media (max-width: 768px) {
-  .hero { padding: 96px 0 56px; }
-  .heroTitle { font-size: 28px; }
+  .hero { padding: 88px 0 48px; }
+  .heroText :global(.section-label) { font-size: 11px; letter-spacing: 0.08em; margin-bottom: 12px; }
+  .heroTitle { font-size: 28px; margin-bottom: 14px; }
+  .heroSub { font-size: 15px; margin-bottom: 22px; }
+  .heroCtas { gap: 8px; margin-bottom: 14px; }
   .heroCtas a { flex: 1 1 100%; justify-content: center; }
+  /* demo link: quiet text link instead of a second big button */
+  .heroCtas a:last-child {
+    background: transparent;
+    border-color: transparent;
+    color: var(--purple-bright);
+    padding: 8px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .trust { font-size: 13px; }
   .featHeading { font-size: 24px; margin-bottom: 28px; }
   .bannerInner { padding: 40px 20px; }
 
@@ -426,14 +439,14 @@
   .stage {
     position: relative;
     inset: auto;
-    aspect-ratio: 520 / 470;
+    aspect-ratio: 520 / 575;
   }
   .captionFloat {
     position: relative;
     right: auto;
     bottom: auto;
     width: 100%;
-    margin-top: 14px;
+    margin-top: 12px;
   }
   .aiBadge { font-size: 11px; padding: 6px 11px; }
   .tClips img, .tAfter img { height: 280px; }

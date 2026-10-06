@@ -31,8 +31,7 @@ export default function Home() {
                   Watch 15-sec demo
                 </a>
               </div>
-              <p className={styles.note}>No credit card · Every export is free</p>
-              <p className={styles.trust}>100+ product sellers using CutEdit</p>
+              <p className={styles.trust}>100+ product sellers using CutEdit · Every export is free</p>
             </div>
 
             {/* Right: phone visual */}
