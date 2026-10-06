@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 // ---- EDIT THESE LINKS LATER ----
 const START_URL = 'https://play.google.com/store/apps/details?id=com.framesnap.app' // Start Free Reel (replace when you have the link)
-const DEMO_URL = '#' // your Instagram reel link goes here
+const DEMO_URL = 'https://www.instagram.com/reel/DeJDfYLpU9S/' // your Instagram reel link goes here
 // --------------------------------
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroGrid}>
             <div className={`${styles.heroText} fade-up`}>
-              <span className="section-label">For clothing sellers &amp; creators</span>
+              <span className="section-label">For clothing sellers, vloggers, salons &amp; carpenters</span>
               <h1 className={styles.heroTitle}>
                 Upload clips. Get reels in 60 seconds.
               </h1>
@@ -36,21 +36,25 @@ export default function Home() {
             </div>
 
             {/* Right: phone visual */}
-            <div className={`${styles.visual} fade-up-2`}>
-              <div className={`${styles.phone} ${styles.phoneBack}`}>
-                <img src="/images/2output.png" alt="Raw fabric clip" />
-                <span className={styles.upload} aria-hidden="true">↑</span>
-              </div>
-              <span className={styles.aiBadge}>✦ AI</span>
-              <div className={`${styles.phone} ${styles.phoneFront}`}>
-                <img src="/images/promise_reel_final.png" alt="Saree shown on a model" />
-                <span className={styles.chip}>Model look applied</span>
-              </div>
-              <div className={styles.captionFloat}>
-                <p className={styles.captionText}>
-                  Wine Banarasi silk saree with gold zari work. DM or WhatsApp to book.
-                </p>
-                <p className={styles.tags}>#banarasisaree #sareelove #reelsindia</p>
+            <div className={`${styles.rightCol} fade-up-2`}>
+              <p className={styles.visualTitle}>Raw clips to Instagram post in a minute</p>
+              <div className={styles.visual}>
+                <div className={`${styles.phone} ${styles.phoneBack}`}>
+                  <img src="/images/2output.png" alt="Raw fabric clip" />
+                  <span className={styles.chipTop}>Your raw clips</span>
+                </div>
+                <span className={styles.aiBadge}>✦ AI cuts, trims &amp; adds model look</span>
+                <div className={`${styles.phone} ${styles.phoneFront}`}>
+                  <img src="/images/promise_reel_final.png" alt="Saree shown on a model" />
+                </div>
+                <div className={styles.captionFloat}>
+                  <span className={styles.captionLabel}>Caption &amp; hashtags, written for you</span>
+                  <p className={styles.captionText}>
+                    Wine Banarasi silk saree with gold zari work. DM or WhatsApp to book.
+                  </p>
+                  <p className={styles.tags}>#banarasisaree #sareelove #reelsindia</p>
+                  <span className={styles.ready}>Ready to post on Instagram</span>
+                </div>
               </div>
             </div>
           </div>
